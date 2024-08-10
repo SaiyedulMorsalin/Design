@@ -112,8 +112,34 @@
     </header>
     <main>
         <!-- Books  -->
-        <div class="md:container md:mx-auto">
+        <div class="md:container md:mx-auto my-5">
+            <div class="flex justify-between p-5">
+                <h1>Most Popular</h1>
+                <a href="">See All</a>
 
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 md:gap-10 gap-3 ">
+                <div id="cc" class="card card-compact bg-base-100 w-96 shadow-xl"
+                    onmouseover="document.getElementById('cc').classList.replace('card-compact','image-full')"
+                    onmouseout="document.getElementById('cc').classList.replace('image-full','card-compact')">
+                    <figure>
+                        <img class="w-full" src="https://rb.gy/d30cha" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center hover:text-center">
+                        <h2 class="card-title">Harry Potter..!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                        <div class="card-actions justify-center items-center">
+                            <h1 class="font-semibold text-2xl hover:italic"><span class="line-through">TK. 550</span>
+                                <span>TK.
+                                    450</span>
+                            </h1>
+                            <button class="btn  btn-primary">Details</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- author  -->
         <div class="md:container md:mx-auto">
