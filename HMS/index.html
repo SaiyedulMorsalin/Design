@@ -9,33 +9,97 @@
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/24f4200f37.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <div class="nav-container d-flex align-items-center justify-center-between">
+        <nav class="nav-container">
+            <div class="nav-wrapper d-flex align-items-center justify-content-around container">
                 <div class="nav-logo">
                     <h3>Doctor Portal</h3>
                 </div>
                 <div class="nav-menu mt-2">
-                    <ul class="d-flex gap-3 align-items-center">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Doctor</a></li>
-                        <li><a href="">Contact Us</a></li>
+                    <ul class="d-flex gap-3 align-items-center nav">
+                        <li><a class="nav-link" href="">Home</a></li>
+                        <li><a class="nav-link" href="">Services</a></li>
+                        <li><a class="nav-link" href="">Doctor</a></li>
+                        <li><a class="nav-link" href="">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="banner-container container">
+            <div class="title-text">
+                <h5>Hello, <span>Doctor@Name</span></h5>
+            </div>
+            <div class="banner">
+                <div class="banner-txt">
+                    <h1>Providing Quality <br> Healthcare</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam architecto quaerat, nulla
+                        inventore debitis delectus hic alias quasi sunt ad numquam, aut libero fuga dolorem
+                        doloribus,
+                        iure dolor assumenda sint!</p>
+                </div>
+                <div class="banner-img">
+                    <img class="bn-img" src="./images/pngegg (1) 1.png" alt="">
+                </div>
+            </div>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <div class="services-container container">
+            <div class="services-txt">
+                <h2>Services We Provided</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ullam quia culpa, modi numquam
+                    ab hic? Saepe eveniet esse fuga recusandae commodi, exercitationem numquam, doloremque, sapiente ex
+                    vel facilis at?</p>
+            </div>
+            <div class="services-card-wrap">
+                <div
+                    class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein">
+                    <ul id="services-card" class="slider-container py-4">
+
+                    </ul>
+
+                    <button type="button" class="slider-nav" aria-label="Go left"></button>
+                    <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+                    <div class="slider-indicators">
+                        <button class="" aria-label="Go to slide"></button>
+                        <button aria-label="Go to slide" class=""></button>
+                        <button aria-label="Go to slide" class=""></button>
+                        <button aria-label="Go to slide" class="active"></button>
+                        <button aria-label="Go to slide"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="doctors-container container">
+            <div class="row">
+                <div class="col-4">
+
+                    <h3>Filter</h3>
+                </div>
+                <div class="col-8"></div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
